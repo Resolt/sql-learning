@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  db:
+    container_name: sql-learning
+    image: postgres
+    restart: unless-stopped
+    # environment:
+    #   POSTGRES_PASSWORD: "learn"
+    #   POSTGRES_USER: "learn"
+    #   POSTGRES_DB: "learn"
+    # ports:
+    #   - 5432:5432
