@@ -5,9 +5,9 @@ services:
     container_name: sql-learning
     image: postgres
     restart: unless-stopped
-    # environment:
-    #   POSTGRES_PASSWORD: "learn"
-    #   POSTGRES_USER: "learn"
-    #   POSTGRES_DB: "learn"
-    # ports:
-    #   - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: "learn"
+      POSTGRES_USER: "learn"
+      POSTGRES_DB: "learn"
+    ports:
+      - 5433:5432
